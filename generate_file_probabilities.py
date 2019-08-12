@@ -15,6 +15,10 @@ train_set = open("breast-cancer/breast-cancer-wisconsin.data.train", "r")
 #7. Normal Nucleoli    . . . . . . . 1 - 10
 #8. Mitoses            . . . . . . . 1 - 10
 
+# The probabilities used in the naive Bayes classifier are computed, then we take log, and scale the
+# values to integers. Finally, all those scaled logarithms are saved in two files corresponding to
+# the two possible classes: benign and malignant.
+
 total_benign = 0
 total_malignant = 0
 
