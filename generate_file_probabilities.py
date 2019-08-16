@@ -41,7 +41,6 @@ for line in train_set:
         total_benign += 1
     for i in xrange(1, len(list_line)):
         val = int(list_line[i])
-        print val
         A[i-1][val] += 1
 
 train_set.close()
@@ -69,7 +68,7 @@ for i in xrange(9):
 log_M = [ [0 for _ in xrange(11) ] for _ in xrange(9)]
 log_B = [ [0 for _ in xrange(11) ] for _ in xrange(9)]
 
-SCALE_FACTOR = 1000 
+SCALE_FACTOR = 10000 
 
 for i in xrange(9):
     for j in xrange(1, 11):
